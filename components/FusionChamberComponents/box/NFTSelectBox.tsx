@@ -80,7 +80,7 @@ const TAB_COUNT = Math.ceil(cardData.length / 9);
 
 const NFTSelectBox = () => {
   const [tabIndex, setTabIndex] = useState(0);
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState<cardProps[]>([]);
 
   const dots: JSX.Element[] = [];
   for (let i = 0; i < TAB_COUNT; i++) {
